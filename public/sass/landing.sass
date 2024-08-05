@@ -1,0 +1,504 @@
+$mainColor: #336913
+$grey: #e2e3e5
+$fontFamily: Helvetica
+
+body
+    font-family: $fontFamily
+
+.btn
+    padding: 0.8em 1.8em
+    border-radius: 10em
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075)
+    cursor: pointer
+    border: 1.5px solid $grey
+    background-color: white
+
+.box
+    border-radius: 20px
+    border: 1.5px solid $grey
+    padding: 1em 1.5em
+    margin-top: 1.5em
+
+.left
+    float: left
+
+.right
+    float: right
+
+.cb
+    clear: both
+
+.mr-2
+    margin-right: 2em
+
+nav
+    width: 100%
+    padding: 1.5em 2.5em
+    text-align: center
+    position: fixed
+    top: 0
+    left: 0
+    height: 3em
+    background-color: white
+    z-index: 10
+
+    .nav-item
+        position: absolute
+        top: 50%
+        -ms-transform: translateY(-50%)
+        transform: translateY(-50%)
+
+    .logo
+        float: left
+
+        img
+            width: 165px
+            height: 50px
+
+    button
+        float: right
+        font-weight: 600
+        color: $mainColor
+        -ms-transform: translateX(-50%)
+        transform: translateX(-50%)
+
+    .menu
+        margin: 0 auto !important
+        display: inline-block
+        -ms-transform: translate(-50%, -50%)
+        transform: translate(-50%, -50%)
+
+        li
+            display: inline
+            text-decoration: none
+            margin: 0 0.8em
+
+.section-one
+    margin-top: 6em
+    width: 100%
+
+    .child
+        width: calc(50% - 1px)
+        float: left
+
+        .content
+            padding: 3em
+
+            .progress
+
+                .progress-content
+                    margin-left: 1em
+                    display: inline
+
+                    .progress-now
+                        color: $mainColor
+                        font-size: 30pt
+                        font-weight: 600
+
+                .progress-btn
+                    background-color: $mainColor
+                    color: white
+                    font-weight: 600
+
+                .progress-bar
+                    height: 15px
+                    margin-top: 0.8em
+                    border-radius: 1em
+                    background-color: #d5dad4
+
+                    .progress-bar-now
+                        width: 45%
+                        height: 15px
+                        border-radius: 1em
+                        background-color: $mainColor
+
+        .mangroves-img
+            width: 100%
+
+        .leaderboard
+            padding: 2em 1.5em
+
+            .leaderboard-control
+                .btn
+                    color: darken($grey, 30%)
+                    margin-right: 0.3em
+
+                .active
+                    color: lighten($mainColor, 10%)
+                    border: lighten($mainColor, 10%) 1px solid
+
+            .leaderboard-list
+                margin-top: 1.8em
+
+                .leaderboard-list-item
+                    border-bottom: $grey 1px solid
+                    padding-bottom: 0.5em
+                    margin-top: 0.5em
+
+                    .item-number
+                        padding: 15px
+                        font-size: 15pt
+                        border-radius: 100%
+                        color: white
+                        font-weight: bolder
+                        margin-right: 1em
+
+                        &.upper
+                            background-color: $mainColor
+
+                        &.mid
+                            background-color: #85BB50
+
+                        &.lower
+                            background-color: #A7CC05
+
+                    .item-icon
+                        width: 55px
+                        height: 55px
+                        background-size: contain
+                        margin-right: 1em
+
+                        &.maven
+                            background-image: url('./../images/Leaderboard-Maven.png')
+
+                        &.guardian
+                            background-image: url('./../images/Leaderboard-Guardian.png')
+
+                        &.master
+                            background-image: url('./../images/Leaderboard-Master.png')
+
+                    .item-content
+                        font-size: 10pt
+                        margin-top: 0.5em
+
+                        .item-name
+                            font-size: 18pt
+                            font-weight: bolder
+
+                    .icon-mangrove
+                        padding-top: 0.5em
+
+                    .item-mangrove
+                        color: $mainColor
+                        padding-top: 0.8em
+                        margin-left: 0.5em
+
+                        .total
+                            font-size: 20pt
+                            font-weight: bolder
+
+        &.left
+            border-right: $grey solid 1px
+
+    .sponsor
+        margin-top: -6px
+        background-color: #F5F8FA
+        padding: 3em 4em
+
+        img
+            width: 150px
+            margin: auto 2.3em
+
+.section-two
+    height: 100vh
+    padding: 3em
+
+    .content
+        text-align: center
+
+        img
+            width: 120px
+            margin-left: 1em
+
+        .content-desc
+            width: 60%
+            margin-left: 20%
+
+    .documentation
+        width: 100%
+        height: 40%
+        position: relative
+        z-index: -1
+        margin-top: 2em
+        text-align: center
+
+        .doc-content
+            width: 42%
+            margin: 0 2%
+            position: absolute
+
+            .doc-image
+                background-size: contain
+                width: 100%
+                border-radius: 25px
+
+            .doc-desc
+                font-weight: bold
+
+            &.doc-left
+                left: 3em
+
+            &.doc-right
+                right: 3em
+
+        .transform
+            width: 20%
+            height: 10em
+            left: 40%
+            top: 50%
+            transform: translateY(-50%)
+            position: absolute
+            z-index: 1
+            background-color: white
+            border-radius: 25px
+            color: lighten($mainColor, 10%)
+            font-weight: bolder
+
+            img
+                width: 40%
+                height: 4em
+                margin-top: 1.8em
+                margin-bottom: 1em
+
+.section-three
+    height: 100vh
+    background-color: #F5FAF8
+    padding: 3em
+
+    .content
+        text-align: center
+        width: 50%
+        margin-left: 25%
+
+        .title
+            color: $mainColor
+
+    .activity
+        height: 45vh
+        background-color: white
+        border-radius: 25px
+        padding: 0 2em
+        margin-top: 2em
+
+        .activity-detail
+            width: 56%
+            margin-top: calc(45vh * 15 / 100)
+            height: 70%
+            float: left
+
+            .activity-date
+                color: $mainColor
+                font-size: 16pt
+                font-weight: bold
+                margin-bottom: 0.5em
+
+            .activity-time
+                font-size: 20pt
+                font-weight: bold
+
+            .activity-desc
+                width: 75%
+                margin-bottom: 1.5em
+
+            .activity-btn
+                background-image: url('./../images/Icon Download.png')
+                background-color: $mainColor
+                background-repeat: no-repeat
+                background-position: 16px center
+                background-size: 20px
+                padding-left: 45px
+                color: white
+                font-weight: 600
+                vertical-align: middle
+                margin-top: 1.5em
+
+        .picture
+            width: 42%
+            float: right
+            margin-top: calc(45vh * 5 / 100)
+            position: relative
+
+            img
+                width: 100%
+                border-radius: 30px
+                background-size: contain
+                position: absolute
+
+            .btn-navigation
+                color: white
+                border: transparent
+                background-color: $mainColor
+                padding: 0.8em 1em
+                border-radius: 10px
+                position: absolute
+                top: calc(45vh * 50 / 100)
+                -ms-transform: translateY(-50%)
+                transform: translateY(-50%)
+
+                &.prev
+                    left: 2%
+
+                &.next
+                    right: 2%
+
+    .activity-progress
+        width: 100%
+        display: inline-flex
+
+        .activity-progress-item
+            flex-grow: 1
+            margin: 3em 1em 0 1em
+            padding-top: 2em
+            border-top: 5px solid $grey
+
+            &.active
+                border-color: $mainColor
+
+.section-four
+    height: 250vh
+    padding: 3em
+
+    .title
+        text-align: center
+        margin-bottom: 2em
+
+    .content
+        text-align: center
+        width: 50%
+        margin-left: 25%
+        margin-bottom: 3em
+
+        .title
+            color: #112D63
+            margin-bottom: 0
+
+    .table-sponsorship
+        width: 100%
+        border-spacing: 0px
+        border: 1px solid #E0F6FF
+        border-radius: 25px
+
+        &.personal
+            th
+                &:first-child
+                    text-align: left
+
+            td
+                &:first-child
+                    text-align: left
+
+        &.corporate
+            tbody
+                tr
+                    &:last-child
+                        border-spacing: 1px
+                        background-color: #518BBB
+
+        thead
+            background-color: #E0F6FF
+
+            th
+                padding: 1.5em 2em
+
+                &:first-child
+                    border-top-left-radius: 25px
+
+                &:last-child
+                    border-top-right-radius: 25px
+
+        tbody
+            td
+                padding: 1.5em 2em
+                text-align: center
+
+                &:first-child
+                    font-weight: bold
+
+                img
+                    width: 27px
+                    transform: translateY(25%)
+                    margin-right: 1em
+
+            tr
+                &:nth-child(even)
+                    background-color: #F8FDFF
+
+                &:last-child
+                    td
+                        &:first-child
+                            border-bottom-left-radius: 25px
+
+                        &:last-child
+                            border-bottom-right-radius: 25px
+
+    hr
+        margin-top: 3em
+        margin-bottom: 3em
+        border-top: lighten($grey, 30%) 1px solid
+
+    .package-button
+        &.personal
+            background-color: #518BBB
+            color: white
+
+        &.corporate
+            background-color: white
+            color: #518BBB
+
+.section-five
+    background-color: #F5FAF8
+    height: 80vh
+    padding: 3em 3em 0 3em
+    text-align: center
+    position: relative
+    z-index: 5
+
+    .content
+        width: 50%
+        margin-left: 25%
+        margin-bottom: 3em
+
+        .title
+            color: $mainColor
+
+    .support-button
+        color: white
+        background-color: $mainColor
+        padding: 1.2em 2.4em
+        margin-top: 1.5em
+        z-index: 2
+
+    .picture
+        width: 95%
+        height: 41.5vh
+        position: relative
+        left: 3%
+
+        img
+            float: left
+            width: 19%
+            position: absolute
+            z-index: 1
+            bottom: 0
+
+            &.img-1
+                left: 0
+
+            &.img-2
+                left: 20%
+
+            &.img-3
+                left: 40%
+
+            &.img-4
+                left: 60%
+
+            &.img-5
+                left: 80%
+
+.footer
+    background-color: darken($mainColor, 10%)
+    color: white
+    text-align: center
+    font-size: 18pt
+    padding: 2vh 0
